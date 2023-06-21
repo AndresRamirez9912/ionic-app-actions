@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add new task</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h3>Task Name</h3>
+  <ion-input  type="text" placeholder="Task name" [(ngModel)]="taskName" ></ion-input>
+  <br>
+  <ion-button (click)="create()" expand="block" fill="clear" shape="round">
+    Add Task
+  </ion-button>
+  <ion-button (click)="cancelCreate()" expand="block" fill="clear" shape="round">
+    Cancel
+  </ion-button>
+</ion-content>
