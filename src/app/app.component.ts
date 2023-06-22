@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
+import { Router } from '@angular/router';
+import { App, URLOpenListenerEvent } from '@capacitor/app';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,24 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private router: Router, private zone: NgZone) {
+    this.initializeApp();
+  }
+  initializeApp() {
+    App.addListener('appUrlOpen', (event: URLOpenListenerEvent) => {
+      console.log('App oppened with an external URL');
+
+      this.zone.run(() => {
+        // https://appActionIonic.com/tab2
+        const domain = 'appActionIonic.com';
+
+        const pathArray = event.url.split(domain); // separate the endpoint
+
+        const appPath = pathArray.pop(); // Get only the endpoint
+        if (appPath) {
+          this.router.navigateByUrl(appPath);
+        }
+      });
+    });
+  }
 }
