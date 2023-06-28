@@ -1,7 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">appActionTest</string>
-    <string name="title_activity_main">appActionTest</string>
-    <string name="package_name">io.appaction.test</string>
-    <string name="custom_url_scheme">io.appaction.test</string>
+  <string name="app_name">appActionTest</string>
+  <string name="title_activity_main">appActionTest</string>
+  <string name="package_name">io.appaction.test</string>
+  <string name="custom_url_scheme">io.appaction.test</string>
+
+  <!--  My string for the app actions -->
+  <string name="shortcut_short_label">Abrir tab 2</string>
+  <string name="shortcut_long_label">Abrir el tab 2 en appActionTest</string>
 </resources>
