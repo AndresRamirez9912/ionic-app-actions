@@ -17,12 +17,11 @@
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
         <data android:scheme="https" />
-        <data android:host="appActionIonic.com"
-          tools:ignore="AppLinkUrlError" />
+        <data android:host="appactionionic.com" tools:ignore="AppLinkUrlError" />
       </intent-filter>
 
       <!--  Add the reference of the shortcuts.xml file -->
-      <meta-data android:name="io.appaction.test" android:resource="@xml/shortcuts" />
+      <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
 
     </activity>
 
