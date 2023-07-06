@@ -17,6 +17,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('./tab2/tab2.module').then((m) => m.Tab2PageModule),
   },
+  {
+    path: 'balance',
+    loadChildren: () => import('./balance/balance.module').then( m => m.BalancePageModule)
+  },
 ];
 @NgModule({
   imports: [

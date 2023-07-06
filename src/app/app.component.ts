@@ -13,7 +13,7 @@ export class AppComponent {
   }
   initializeApp() {
     App.addListener('appUrlOpen', (event: URLOpenListenerEvent) => {
-      console.log('App oppened with an external URL');
+      console.log('App oppened with an external URL ', event.url);
 
       this.zone.run(() => {
         // bpop://action.com/tab2

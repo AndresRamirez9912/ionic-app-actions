@@ -11,13 +11,12 @@
   <shortcut
       android:enabled="true"
       android:icon="@drawable/balance"
-      android:shortcutId="tab"
+      android:shortcutId="ID_ONE"
       android:shortcutShortLabel="@string/shortcut_short_label"
       android:shortcutLongLabel="@string/shortcut_long_label">
 
     <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
       <parameter-binding android:value="tab2" android:key="feature"/>
     </capability-binding>
-
   </shortcut>
 </shortcuts>
