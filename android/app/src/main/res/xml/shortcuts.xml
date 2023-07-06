@@ -3,7 +3,7 @@
 
   <capability android:name="actions.intent.OPEN_APP_FEATURE">
     <intent>
-      <url-template android:value="https://appactionionic.com/{featureParam" />
+      <url-template android:value="bpop://actions.com/{featureParam}" />
       <parameter android:name="feature" android:key="featureParam"/>
     </intent>
   </capability>

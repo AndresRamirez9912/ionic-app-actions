@@ -16,8 +16,8 @@ export class AppComponent {
       console.log('App oppened with an external URL');
 
       this.zone.run(() => {
-        // https://appActionIonic.com/tab2
-        const domain = 'appActionIonic.com';
+        // bpop://action.com/tab2
+        const domain = 'actions.com';
 
         const pathArray = event.url.split(domain); // separate the endpoint
 

@@ -12,12 +12,12 @@
       </intent-filter>
 
       <!-- Add the DeepLink settings -->
-      <intent-filter>
+      <intent-filter android:autoVerify="true">
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="https" />
-        <data android:host="appactionionic.com" tools:ignore="AppLinkUrlError" />
+        <data android:scheme="bpop" />
+        <data android:host="actions.com" tools:ignore="AppLinkUrlError" />
       </intent-filter>
 
       <!--  Add the reference of the shortcuts.xml file -->
