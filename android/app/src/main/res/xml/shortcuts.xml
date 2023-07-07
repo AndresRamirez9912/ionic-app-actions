@@ -20,4 +20,18 @@
     </capability-binding>
 
   </shortcut>
+
+  <!-- Capability Money Transfer -->
+  <capability android:name="actions.intent.CREATE_MONEY_TRANSFER">
+    <intent>
+      <url-template android:value="bpop://actions.com/transfer{?value,transferOriginName,transferDestinationName}" />
+      <!-- ===== Parameters ===== -->
+      <!-- Transfer Amount -->
+      <parameter android:name="moneyTransfer.amount.value" android:key="value"/>
+      <!-- Sender Name -->
+      <parameter android:name="moneyTransfer.moneyTransferOrigin.name" android:key="transferOriginName"/>
+      <!-- Recipient Name -->
+      <parameter android:name="moneyTransfer.moneyTransferDestination.name" android:key="transferDestinationName"/>
+    </intent>
+  </capability>
 </shortcuts>

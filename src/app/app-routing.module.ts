@@ -19,7 +19,13 @@ const routes: Routes = [
   },
   {
     path: 'balance',
-    loadChildren: () => import('./balance/balance.module').then( m => m.BalancePageModule)
+    loadChildren: () =>
+      import('./balance/balance.module').then((m) => m.BalancePageModule),
+  },
+  {
+    path: 'transfer',
+    loadChildren: () =>
+      import('./transfer/transfer.module').then((m) => m.TransferPageModule),
   },
 ];
 @NgModule({

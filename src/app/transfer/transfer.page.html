@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>transfer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Sender Card -->
+  <div class="main-container">
+    <h1>Sender </h1>
+    <div class="card">
+      <div class="name">Nombre: {{transferOriginName}}</div>
+      <div class="account-number">Cuenta: 1234567890</div>
+      <div class="balance">Valor: {{value}}</div>
+    </div>
+
+    <!-- Receiver -->
+    <h1>Receiver</h1>
+    <div class="card">
+      <div class="name">Nombre: {{transferDestinationName}}</div>
+      <div class="account-number">Cuenta: 1234567890</div>
+    </div>
+    <br>
+    <!-- Confirmation Button -->
+    <ion-button
+      class="button"
+      shape="round">
+      Transfer
+    </ion-button>
+  </div>
+</ion-content>
